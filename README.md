@@ -4,7 +4,7 @@
 The objective of this workshop is to write a simple CRUD application. You will map the HTTP methods to SQL verbs.
 
 
-# Deploying to Railway and their MySQL
+# Deploying to Railway and Railway's MySQL
 
 
 ## Add.env with the following contents
@@ -28,3 +28,6 @@ The objective of this workshop is to write a simple CRUD application. You will m
     MYSQLUSER=<user>
     MYSQLPASSWORD=<password>
     ```
+
+# Create database and tables with:
+[database](src/main/java/sg/edu/nus/iss/workshop22/database)
