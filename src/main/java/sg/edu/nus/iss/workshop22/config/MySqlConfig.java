@@ -23,12 +23,12 @@ public class MySqlConfig {
             url = "jdbc:" + env.getProperty("MYSQL_URL");
         }
 
-        DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
-        dataSourceBuilder.url(url);
-        dataSourceBuilder.password(env.getProperty("MYSQLPASSWORD"));
-        dataSourceBuilder.username(env.getProperty("MYSQLUSER"));
-
-        return dataSourceBuilder.build();
+        return DataSourceBuilder
+                .create()
+                .url(url)
+                .password(env.getProperty("MYSQLPASSWORD"))
+                .username(env.getProperty("MYSQLUSER"))
+                .build();
 
     }
 
